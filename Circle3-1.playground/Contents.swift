@@ -29,18 +29,21 @@ let circle1 = CAShapeLayer()
 circle1.frame = circleRect
 circle1.path = UIBezierPath(ovalInRect: CGRect(origin: CGPointZero, size: circleRect.size)).CGPath
 circle1.fillColor = fillColor.CGColor
+circle1.opacity = 0.8
 rootLayer.addSublayer(circle1)
 
 let circle2 = CAShapeLayer()
 circle2.frame = circleRect
 circle2.path = UIBezierPath(ovalInRect: CGRect(origin: CGPointZero, size: circleRect.size)).CGPath
 circle2.fillColor = fillColor.CGColor
+circle2.opacity = 0.8
 rootLayer.addSublayer(circle2)
 
 let circle3 = CAShapeLayer()
 circle3.frame = circleRect
 circle3.path = UIBezierPath(ovalInRect: CGRect(origin: CGPointZero, size: circleRect.size)).CGPath
 circle3.fillColor = fillColor.CGColor
+circle3.opacity = 0.8
 rootLayer.addSublayer(circle3)
 
 view.layer.addSublayer(rootLayer)
@@ -74,9 +77,9 @@ ani3.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
 circle3.addAnimation(ani3, forKey: nil)
 
 //let ani4 = CABasicAnimation(keyPath:"transform.rotation")
-//ani4.fromValue = 0
+////ani4.fromValue = 0
 //ani4.toValue = M_PI * 2
-//ani4.duration = duration
+//ani4.duration = duration * 3
 //ani4.repeatCount = Float.infinity
 //ani4.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
 //rootLayer.addAnimation(ani4, forKey:nil)
